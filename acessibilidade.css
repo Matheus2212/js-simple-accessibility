@@ -119,7 +119,7 @@ body.accessibilityOpen #accessibilityWidget{
 #accessibilityWidget .accessibilityWrapper .accessibilityContent{
     position: relative;       
     height: calc(100% - 60px);
-    padding-bottom: 30px;
+    padding-bottom: 40px;
 }
 #accessibilityWidget .accessibilityWrapper .accessibilityContent::after{
     content: " ";
