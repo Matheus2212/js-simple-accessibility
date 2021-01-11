@@ -31,7 +31,7 @@ The script already has a few basic options on it. They are:
 - **Invert Colors** 
 - **Contrast**
 - **Highlight Links**
-- **Highlight titles (H* tags)**
+- **Highlight titles (Hn tags)**
 - **Font Size**
 - **Stop Animations**
 - **Bigger Cursor**
