@@ -11,7 +11,7 @@ Just add the .js file and the .css file to see the magic. Like this:
 </script>
 ```
 
-You can pass an ement ID as well, to make it a button to open/close the widget.
+You can pass an ement ID as well, to make it a button to open/close the widget. Note that the element must exist.
 
 
 ```javascript
