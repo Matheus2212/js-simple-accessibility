@@ -5,8 +5,8 @@ Simple vanilla JS script for simple accessibility options.
 Just add the .js file and the .css file to see the magic. Like this:
 
 ```javascript
-<script src='path/to/jsfile.js'></script>
-<script>
+<script type="text/javascript" src="path/to/jsfile.js"></script>
+<script type="text/javascript">
   ACCESSIBILITY.createAccessibility();
 </script>
 ```
@@ -15,8 +15,8 @@ You can pass an ement ID as well, to make it a button to open/close the widget.
 
 
 ```javascript
-<script src='path/to/jsfile.js'></script>
-<script>
+<script type="text/javascript" src='path/to/jsfile.js'></script>
+<script type="text/javascript">
   ACCESSIBILITY.createAccessibility("myElementId");
 </script>
 ```
