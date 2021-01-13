@@ -3,33 +3,39 @@ Simple vanilla JS script for simple accessibility options.
 
 
 ## Overview
-SimpleAccessibility_JS is a vanilla JavaScript code that will make the website more accessible for people with motor difficulties. It should not do any harm to the website or make design be worse. 
+SimpleAccessibility_JS is a vanilla JavaScript code that will make the website more accessible for people with motor difficulties. It should not do any harm to the website or make design be worse. It was developed using JavaScript ES5 to work with several other browsers.
 
-It uses cookies has its memory, so the user don't need to keep applying the options he uses at each page load on the website.
+It uses cookies has its memory, so the user won't need to keep applying the options that he uses at each page load on the website (localstorage in the near future maybe?)
+
+Please, if you see any feature that isn't working, please tell me wich feature is and wich browser you've tested. It will be faster to fix that way.
 
 ---
 
 
 ## How to use
-Just add the .js file and the .css file to see the magic. Like this:
+Just add the .js file and the .css file like and when the page is loaded (or before </body> tag), use this:
 
 ```css
 <link rel="stylesheet" href="path/to/cssfile.csss"/>
 ```
 ```javascript
 <script type="text/javascript" src="path/to/jsfile.js"></script>
+```
+```javascript
 <script type="text/javascript">
   ACCESSIBILITY.createAccessibility();
 </script>
 ```
 
-You can pass an ement ID as well, to make it a button to open/close the widget. Note that the element must exist.
+You can give an element ID as parameter, to make it a button to open/close the widget. Please note that the element MUST exist (the script WON'T create it).
 
 ```css
 <link rel="stylesheet" href="path/to/cssfile.csss"/>
 ```
 ```javascript
 <script type="text/javascript" src='path/to/jsfile.js'></script>
+```
+```javascript
 <script type="text/javascript">
   ACCESSIBILITY.createAccessibility("myElementId");
 </script>
