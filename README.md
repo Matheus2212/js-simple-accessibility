@@ -27,7 +27,7 @@ Just add the .js file and the .css file like and when the page is loaded (or bef
 </script>
 ```
 
-You can give an element ID as parameter, to make it a button to open/close the widget. Please note that the element MUST exist (the script WON'T create it).
+You can give an element ID as parameter (better use in mobile devices), to make it a button to open/close the widget. Please note that the element MUST exist (the script WON'T create it).
 
 ```css
 <link rel="stylesheet" href="path/to/cssfile.csss"/>
@@ -41,7 +41,7 @@ You can give an element ID as parameter, to make it a button to open/close the w
 </script>
 ```
 
-The css files can be loaded too or you can create your own stylesheet.
+Of course, you can create your own stylesheet for the widget.
 
 
 ---
