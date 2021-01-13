@@ -13,6 +13,9 @@ It uses cookies has its memory, so the user don't need to keep applying the opti
 ## How to use
 Just add the .js file and the .css file to see the magic. Like this:
 
+```css
+<link rel="stylesheet" href="path/to/cssfile.csss"/>
+```
 ```javascript
 <script type="text/javascript" src="path/to/jsfile.js"></script>
 <script type="text/javascript">
@@ -22,7 +25,9 @@ Just add the .js file and the .css file to see the magic. Like this:
 
 You can pass an ement ID as well, to make it a button to open/close the widget. Note that the element must exist.
 
-
+```css
+<link rel="stylesheet" href="path/to/cssfile.csss"/>
+```
 ```javascript
 <script type="text/javascript" src='path/to/jsfile.js'></script>
 <script type="text/javascript">
