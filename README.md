@@ -1,5 +1,5 @@
 # SimpleAccessibility_JS
-Simple vanilla JS script for simple accessibility options.
+Simple vanilla JS script for simple accessibility features.
 
 
 ## Overview
