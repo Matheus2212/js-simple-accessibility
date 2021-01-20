@@ -7,6 +7,8 @@ JS_SimpleAccessibility is a vanilla JavaScript code that will make the website m
 
 It uses cookies has its memory, so the user won't need to keep applying the options that he uses at each page load on the website (localstorage in the near future maybe?)
 
+It needs a .css file to apply the accessibility feature (.css file already here).
+
 Please, if you see any feature that isn't working, please tell me wich feature is and wich browser you've tested. It will be faster to fix that way.
 
 ---
