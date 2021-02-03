@@ -5,7 +5,7 @@ Simple vanilla JS script for simple accessibility features.
 ## Overview
 JS_SimpleAccessibility is a vanilla JavaScript code that will make the website more accessible for people with motor difficulties. It should not do any harm to the website or make design be worse. It was developed using JavaScript ES5 to work with several other browsers.
 
-It uses cookies has its memory, so the user won't need to keep applying the options that he uses at each page load on the website (localstorage in the near future maybe?)
+It uses cookies has its memory, so the user won't need to keep applying the options that he uses at each page load on the website (may use localstorage in the near future (?))
 
 It needs a .css file to apply the accessibility feature (.css file already here).
 
