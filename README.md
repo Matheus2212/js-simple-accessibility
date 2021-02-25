@@ -31,7 +31,7 @@ and when the page is loaded (or before `</body>` tag), use this:
 </script>
 ```
 
-You can give an element ID as parameter (better use in mobile devices), to make it a button to open/close the widget. Please note that the element MUST exist (the script WON'T create it). And of course, you can create your own widget stylesheet.
+You can give an element ID as parameter (better use in mobile devices - you'll set this element CSS to always be showing there), to make it a button to open/close the widget. Please note that the element MUST exist (the script WON'T create it). And of course, you can create your own widget stylesheet.
 
 
 ```javascript
