@@ -15,7 +15,7 @@ Please, if you see any feature that isn't working, please tell me wich feature i
 
 
 ## How to use
-Just add the .js file and the .css file like and when the page is loaded (or before </body> tag), use this:
+Just add the .js file and the .css file like and when the page is loaded (or before `</body>` tag), use this:
 
 ```css
 <link rel="stylesheet" href="path/to/cssfile.csss"/>
