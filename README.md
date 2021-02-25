@@ -15,14 +15,16 @@ Please, if you see any feature that isn't working, please tell me wich feature i
 
 
 ## How to use
-Just add the .js file and the .css file like and when the page is loaded (or before `</body>` tag), use this:
-
+Just add the .js file and the .css file like this:
 ```css
 <link rel="stylesheet" href="path/to/cssfile.csss"/>
 ```
 ```javascript
 <script type="text/javascript" src="path/to/jsfile.js"></script>
 ```
+
+and when the page is loaded (or before `</body>` tag), use this:
+
 ```javascript
 <script type="text/javascript">
   ACCESSIBILITY.createAccessibility();
