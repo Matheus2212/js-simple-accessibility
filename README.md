@@ -1,4 +1,4 @@
-# JS_SimpleAccessibility
+# JS Simple Accessibility
 Simple vanilla JS script for simple accessibility features.
 
 
