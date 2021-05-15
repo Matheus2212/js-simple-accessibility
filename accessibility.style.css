@@ -1,0 +1,342 @@
+#accessibilityWidget {
+  position: fixed;
+  top: 150px;
+  right: -300px;
+  opacity: 0;
+  width: 300px;
+  max-height: calc(100% - 150px);
+  overflow: hidden;
+  overflow-y: auto;
+  display: block;
+  opacity: 0;
+  visibility: hidden;
+  background-color: #ffffff;
+
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+
+  -webkit-transition: ease-in-out 0.3s;
+  -moz-transition: ease-in-out 0.3s;
+  -o-transition: ease-in-out 0.3s;
+  -ms-transition: ease-in-out 0.3s;
+  transition: ease-in-out 0.3s;
+
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -o-border-radius: 10px;
+  -ms-border-radius: 10px;
+  border-radius: 10px;
+
+  -webkit-box-shadow: 1px 0 5px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 1px 0 5px rgba(0, 0, 0, 0.5);
+  -o-box-shadow: 1px 0 5px rgba(0, 0, 0, 0.5);
+  -ms-box-shadow: 1px 0 5px rgba(0, 0, 0, 0.5);
+  box-shadow: 1px 0 5px rgba(0, 0, 0, 0.5);
+}
+body.accessibilityOpen #accessibilityWidget {
+  visibility: visible;
+  display: block;
+  opacity: 1;
+  background-color: #000000;
+  right: 15px;
+}
+
+#accessibilityWidget .accessibilityWrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: #f5f5f5;
+  color: #666666;
+  max-height: 100%;
+}
+
+#accessibilityWidget .accessibilityWrapper .accessibilityClose {
+  position: absolute;
+  right: 0;
+  padding: 20px;
+  color: #333333;
+  z-index: 1;
+  cursor: pointer;
+
+  -webkit-box-shadow: rgba(255, 255, 255, 0.3);
+  -moz-box-shadow: rgba(255, 255, 255, 0.3);
+  -o-box-shadow: rgba(255, 255, 255, 0.3);
+  -ms-box-shadow: rgba(255, 255, 255, 0.3);
+  box-shadow: rgba(255, 255, 255, 0.3);
+
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -o-border-radius: 5px;
+  -ms-border-radius: 5px;
+  border-radius: 5px;
+}
+#accessibilityWidget .accessibilityWrapper .accessibilityClose::after,
+#accessibilityWidget .accessibilityWrapper .accessibilityClose::before {
+  content: " ";
+  display: block;
+  position: absolute;
+  height: 16px;
+  top: 11px;
+  width: 3px;
+  background-color: #666666;
+
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -o-border-radius: 4px;
+  -ms-border-radius: 4px;
+  border-radius: 4px;
+}
+#accessibilityWidget .accessibilityWrapper .accessibilityClose::after {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+#accessibilityWidget .accessibilityWrapper .accessibilityClose::before {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+#accessibilityWidget .accessibilityWrapper .accessibilityHeader {
+  position: relative;
+  left: 0;
+  right: 0;
+  top: 0;
+  background: #f0f0f0;
+  padding: 5px 10px;
+  color: #333333;
+  line-height: 30px !important;
+  font-size: 17px !important;
+}
+#accessibilityWidget .accessibilityWrapper .accessibilityHeader span {
+  line-height: 30px !important;
+  font-size: 17px !important;
+}
+
+#accessibilityWidget .accessibilityWrapper .accessibilityContent {
+  position: relative;
+  height: calc(100% - 60px);
+  padding-bottom: 40px;
+}
+#accessibilityWidget .accessibilityWrapper .accessibilityContent::after {
+  content: " ";
+  display: table;
+  clear: both;
+  width: 100%;
+}
+#accessibilityWidget .accessibilityWrapper .accessibilityContent button span {
+  line-height: 30px !important;
+  font-size: 17px !important;
+}
+#accessibilityWidget .accessibilityWrapper .accessibilityContent button {
+  position: relative;
+  width: 50%;
+  height: 25%;
+  float: left;
+  padding: 55px 0 20px;
+  border: none;
+  background-color: #f5f5f5;
+  line-height: 25px !important;
+  font-size: 15px !important;
+
+  -webkit-transition: ease-in-out 0.2s;
+  -moz-transition: ease-in-out 0.2s;
+  -o-transition: ease-in-out 0.2s;
+  -ms-transition: ease-in-out 0.2s;
+  transition: ease-in-out 0.2s;
+}
+#accessibilityWidget
+  .accessibilityWrapper
+  .accessibilityContent
+  button.accessibilityActive::after {
+  content: " ";
+  display: block;
+  position: absolute;
+  left: 3px;
+  top: 3px;
+  bottom: 3px;
+  right: 3px;
+  border: 3px solid #63ab31;
+
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -o-border-radius: 4px;
+  -ms-border-radius: 4px;
+  border-radius: 4px;
+}
+#accessibilityWidget .accessibilityWrapper .accessibilityContent button:hover,
+#accessibilityWidget .accessibilityWrapper .accessibilityContent button:active {
+  background-color: #e0e0e0;
+  cursor: pointer;
+}
+#accessibilityWidget
+  .accessibilityWrapper
+  .accessibilityContent
+  button.accessibilityActive {
+  background-color: #c5c5c5;
+}
+#accessibilityWidget .accessibilityWrapper .accessibilityContent button svg,
+#accessibilityWidget .accessibilityWrapper .accessibilityContent button img {
+  position: absolute;
+  left: 50%;
+  top: 11px;
+  width: 40px;
+  height: 40px;
+  margin-left: -20px;
+}
+
+#accessibilityWidget .accessibilityWrapper .accessibilityFooter {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: calc(100% - 40px);
+  background: #f0f0f0;
+  padding: 5px 10px;
+  color: #333333;
+  line-height: 30px;
+  text-align: center;
+  line-height: 30px !important;
+  font-size: 17px !important;
+}
+#accessibilityWidget .accessibilityWrapper .accessibilityFooter a {
+  cursor: pointer;
+  line-height: 30px !important;
+  font-size: 17px !important;
+}
+#accessibilityWidget .accessibilityWrapper .accessibilityFooter span {
+  line-height: 30px !important;
+  font-size: 17px !important;
+}
+#accessibilityWidget .accessibilityWrapper .accessibilityFooter svg {
+  fill: #666666;
+  width: 18px;
+  height: 18px;
+  position: relative;
+  top: 2px;
+}
+
+body.accessibilityInvertColors {
+  -webkit-filter: invert(100%) !important;
+  -moz-filter: invert(100%) !important;
+  -o-filter: invert(100%) !important;
+  -ms-filter: invert(100%) !important;
+  filter: invert(100%) !important;
+
+  overflow-x: hidden;
+}
+body.accessibilityStopAnimations,
+body.accessibilityStopAnimations * {
+  -webkit-transition: 0s !important;
+  -moz-transition: 0s !important;
+  -o-transition: 0s !important;
+  -ms-transition: 0s !important;
+  transition: 0s !important;
+
+  overflow-x: hidden;
+}
+body.accessibilityContrast {
+  -webkit-filter: contrast(100%) !important;
+  -moz-filter: contrast(100%) !important;
+  -o-filter: contrast(100%) !important;
+  -ms-filter: contrast(100%) !important;
+  filter: contrast(100%) !important;
+
+  background-color: #ffffff !important;
+  color: #000000 !important;
+  overflow-x: hidden;
+}
+body.accessibilityGrayScale {
+  -webkit-filter: grayscale(100%) !important;
+  -o-filter: grayscale(100%) !important;
+  -ms-filter: grayscale(100%) !important;
+  -moz-filter: grayscale(100%) !important;
+  filter: grayscale(100%) !important;
+
+  overflow-x: hidden;
+}
+body.accessibilityGrayScale.accessibilityContrast.accessibilityInvertColors,
+body.accessibilityGrayScale.accessibilityContrast.accessibilityInvertColors * {
+  -webkit-filter: invert(100%) contrast(100%) grayscale(100%) !important;
+  -moz-filter: invert(100%) contrast(100%) grayscale(100%) !important;
+  -o-filter: invert(100%) contrast(100%) grayscale(100%) !important;
+  -ms-filter: invert(100%) contrast(100%) grayscale(100%) !important;
+  filter: invert(100%) contrast(100%) grayscale(100%) !important;
+
+  color: #000000 !important;
+  background-color: #ffffff !important;
+  overflow-x: hidden;
+}
+body.accessibilityInvertColors.accessibilityContrast,
+body.accessibilityInvertColors.accessibilityContrast * {
+  background-color: #ffffff !important;
+  color: #000000 !important;
+  overflow-x: hidden;
+
+  -webkit-filter: invert(100%) contrast(100%) !important;
+  -moz-filter: invert(100%) contrast(100%) !important;
+  -o-filter: invert(100%) contrast(100%) !important;
+  -ms-filter: invert(100%) contrast(100%) !important;
+  filter: invert(100%) contrast(100%) !important;
+}
+body.accessibilityHighLightLinks a {
+  border: 4px solid #ff0000 !important;
+}
+body.accessibilityBigCursor,
+body.accessibilityBigCursor *,
+body.accessibilityBigCursor *:hover,
+body.accessibilityBigCursor *:active {
+  cursor: url("data:image/png;base64,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"),
+    auto !important;
+}
+
+.accessibilityTriggerButton {
+  position: fixed;
+  right: 15px;
+  top: 102px;
+  background: #f0f0f0;
+  max-height: 38px;
+  max-width: 38px;
+  box-sizing: border-box;
+  padding: 2px;
+
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+  -o-box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+  -ms-box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+}
+.accessibilityTriggerButton img,
+.accessibilityTriggerButton svg {
+  position: relative;
+  max-width: 100%;
+  max-height: 100%;
+  fill: #444444 !important;
+  height: 100%;
+}
+.accessibilityTriggerButton svg * {
+  fill: #444444 !important;
+}
+.enabled[vw] {
+  top: 50px;
+  right: 15px;
+  margin-top: 0;
+}
+.enabled[vw] img {
+  -webkit-filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.4));
+  -o-filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.4));
+  -ms-filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.4));
+  -moz-filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.4));
+  filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.4));
+}
