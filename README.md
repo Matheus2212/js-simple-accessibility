@@ -27,7 +27,7 @@ and when the page is loaded (or before `</body>` tag), use this:
 
 ```javascript
 <script type="text/javascript">
-  ACCESSIBILITY.createAccessibility();
+  ACCESSIBILITY.init();
 </script>
 ```
 
@@ -36,7 +36,7 @@ You can give an element ID as parameter (better use in mobile devices - you'll s
 
 ```javascript
 <script type="text/javascript">
-  ACCESSIBILITY.createAccessibility("myElementId");
+  ACCESSIBILITY.init("myElementId");
 </script>
 ```
 
