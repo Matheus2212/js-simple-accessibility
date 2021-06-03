@@ -7,15 +7,35 @@
     <title>JS Simple Accessibility</title>
     <link rel="stylesheet" href="accessibility.style.css" />
     <style>
+      * {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -o-box-sizing: border-box;
+        -ms-box-sizing: border-box;
+        box-sizing: border-box;
+      }
       html,
       body {
         margin: 0;
         padding: 0;
         position: relative;
+        background: #ffffff;
+        height: 100%;
+        min-height: 100%;
       }
     </style>
   </head>
   <body>
+    <div style="position: relative; padding: 30px; margin: 0 auto; width: 80%">
+      <h1>This is my H1</h1>
+      <h2>This is my H2</h2>
+      <h3>This is my H3</h3>
+      <h4>This is my H4</h4>
+      <h5>This is my H5</h5>
+      <h6>This is my H6</h6>
+      <a href="">This is a link</a>
+      <p>This is my text</p>
+    </div>
     <script src="accessibility.functions.js"></script>
     <script type="text/javascript">
       ACCESSIBILITY.init();
