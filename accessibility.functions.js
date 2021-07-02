@@ -1,3 +1,4 @@
+window.dataLayer = window.dataLayer || [];
 var ACCESSIBILITY = {
 
     body: null,
