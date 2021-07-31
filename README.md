@@ -1,7 +1,5 @@
 # JS Simple Accessibility
 Simple vanilla JS script for simple accessibility features.
-
-
 ## Overview
 JS_SimpleAccessibility is a vanilla JavaScript code that will make the website more accessible for people with motor difficulties. It should not do any harm to the website or make design be worse. It was developed using JavaScript ES5 to work with several other browsers.
 
@@ -13,13 +11,11 @@ Please, if you see any feature that isn't working, please tell me wich feature i
 
 ---
 
-
 ## How to use
 Just add the .js file and the .css file like this:
+
 ```html
 <link rel="stylesheet" href="path/to/cssfile.csss"/>
-```
-```javascript
 <script type="text/javascript" src="path/to/jsfile.js"></script>
 ```
 
@@ -49,7 +45,7 @@ The script already has a few basic options on it. They are:
 - **Contrast**
 - **Highlight Links**
 - **Highlight titles (Hn tags)**
-- **Font Size**
+- **Font Size (3 sizes)**
 - **Stop Animations**
 - **Bigger Cursor**
 
