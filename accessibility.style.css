@@ -11,7 +11,7 @@
   opacity: 0;
   visibility: hidden;
   background-color: #ffffff;
-  z-index: 100;
+  z-index: 999;
 
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -307,7 +307,7 @@ body.accessibilityBigCursor *:active {
   box-sizing: border-box;
   padding: 2px;
   overflow: hidden !important;
-  z-index: 100;
+  z-index: 999;
 
   -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
   -moz-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
